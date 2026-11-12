@@ -1,0 +1,31 @@
+{
+  "name": "my-first-ai-agent",
+  "version": "1.0.0",
+  "description": "A minimal calculator agent built with the OpenAI Agents SDK",
+  "scripts": {
+    "start": "tsx src/cli.ts",
+    "test": "tsx --test test/*.test.ts",
+    "typecheck": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikmehrotra/my-first-ai-agent.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikmehrotra/my-first-ai-agent/issues"
+  },
+  "homepage": "https://github.com/nikmehrotra/my-first-ai-agent#readme",
+  "dependencies": {
+    "@openai/agents": "^0.21.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "type": "module",
+  "private": true
+}
