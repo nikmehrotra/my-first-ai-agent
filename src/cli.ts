@@ -52,6 +52,13 @@ async function ask(question: string) {
     }
 
     console.log(`\n${result.finalOutput}`);
+
+    // Token usage summed over every model request in this run (one per turn).
+    const usage = result.runContext.usage;
+    console.log(
+      `\n[usage] requests: ${usage.requests}, input tokens: ${usage.inputTokens}, ` +
+        `output tokens: ${usage.outputTokens}, total tokens: ${usage.totalTokens}`,
+    );
   } catch (error) {
     console.error('Agent error:', error instanceof Error ? error.message : error);
   }
