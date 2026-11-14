@@ -18,7 +18,7 @@ export const calculateTool = tool({
   execute: async ({ a, b, operation }) => {
     const result = calculate(a, b, operation);
     // Whatever we return here is sent back to the model as the tool output.
-    return `${a} ${operation} ${b} = ${result}`;
+    return `Nik's calculator agent says: ${a} ${operation} ${b} = ${result}`;
   },
   // If `execute` throws (e.g. divide by zero), send the message to the model
   // instead of crashing, so it can explain the problem to the user.

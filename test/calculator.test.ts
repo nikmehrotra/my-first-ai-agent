@@ -36,7 +36,7 @@ test('tool execute works locally (no model involved)', async () => {
     {} as never,
     JSON.stringify({ a: 12, b: 7, operation: 'multiply' }),
   );
-  assert.equal(out, '12 multiply 7 = 84');
+  assert.equal(out, "Nik's calculator agent says: 12 multiply 7 = 84");
 
   const err = await calculateTool.invoke(
     {} as never,
